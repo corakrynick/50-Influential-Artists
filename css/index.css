@@ -97,19 +97,14 @@ nav a {
   color: grey;
   font-family: 'Quicksand', sans-serif;
 }
-body .title-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+body {
+  margin: 8%;
 }
-body .title-container h1 {
-  font-size: 5rem;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  color: grey;
+body .title-container {
+  background-image: url(home.png);
+  background-size: 160px;
+  width: 160px;
+  height: 160px;
   position: absolute;
   z-index: 999;
   margin: 0 auto;
@@ -117,7 +112,29 @@ body .title-container h1 {
   right: 0;
   top: 40%;
 }
+body .title-container h1 {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: white;
+}
 body .title-container h1 button {
   justify-content: center;
   align-items: center;
+  width: 50px;
+}
+body .artist-container {
+  width: 20%;
+  height: 20px;
+}
+body .artist-container .artist {
+  width: 50%;
+}
+body .artist-container img {
+  max-width: 30px;
+  max-height: 30px;
+  width: 10px;
+  height: 10px;
 }
