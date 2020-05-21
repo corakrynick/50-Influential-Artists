@@ -207,7 +207,9 @@ const artists = [
 
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
+console.log(artist[0].name);
 
+console.log(artist.bio[2]);
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
@@ -224,8 +226,9 @@ const artists = [
 */
 function getArtistByIndex(id, name) {
     /* code here */
+    return `The artist at index ${id} is ${name}.`
   }
-  
+  console.log(getArtistByIndex)
   /**
 
 
@@ -237,20 +240,23 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(id, number) {
+
   }
+  console.log(removeArtist)
   
   /**
 
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(numberOfPaintings){
+if (i = 0, i > 100, i++);
+ return
 
-    /* Code here */
+}
 
-  }
+  console.log(numberOfPaintings)
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
@@ -262,13 +268,11 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+function addArtist(information){
+let information = ['21', 'Cora', '1998-2020', 'Web Design', 'Caucasian', 'sentence1 & sentence2'];
+}
 
-    /* Code here */
-
-  }
-
-
+console.log(information);
 
 
 
