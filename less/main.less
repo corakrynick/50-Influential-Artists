@@ -1,19 +1,21 @@
 body{
 
-    margin:8%;
+    section.title-container{
+        background-image: url('../home.png');
+        background-position: center;
+        margin: 0 15%;
+        width: 70%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: solid black 1px;
 
-    .title-container{
-            background-image: url(home.png);
-            background-size: 160px;
-            width: 160px;
-            height: 160px;
+         button{
+             width:10;
+         }
 
-        position: absolute;
-        z-index: 999;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        top: 40%;
      
     h1{
         font-size: 5rem;
@@ -22,32 +24,64 @@ body{
         align-content: center;
         text-align: center;
         color: white;
-
-
-    button{
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-    }
    }   
-  }//end title comtainer
-  .artist-container{
-      width:20%;
-      height: 20px;
-      
-    .artist{
-        width:50%;
-    }
-    img{
-        max-width: 30px;
-        max-height: 30px;
-        width:10px;
-        height:10px;
-
-    }
-  }
+  }//end title comtainer 
   
+     .artists-container{
+         margin: 5%;
+         padding: 2%;
+         display: flex;
+         justify-content: center;
+         align-content: center;
+     
 
+     .artist{
+      border-top: solid black 1px; 
+      padding: 2%; 
+      width:70%;
+      height:10%;
+      display:flex;
+      flex-direction: column;
+      flex-wrap: wrap; 
+      justify-content: center;
+      align-content: center;
+      text-align: center;
 
+      img{
+          padding-left:15%;
+          width:50%;
+          display:flex;
+          justify-content: space-around;
+          align-content: center;
 
+      
+    .bio{
+        width:50%;
+        height: 10%;
+       
+        a{
+           display: flex;
+        }
+    }
+   }
+   }
+  }
+}
+
+@media(max-width: 500px){
+
+    .artists-container{
+     display:flex;
+     flex-direction: column;
+     border-top: none;
+     justify-content: center;
+
+    img{
+        margin-left:20%;
+    }
+    .bio{
+        margin-left:30%;
+        text-align: center;;
+    }
+    }
 }
